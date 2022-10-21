@@ -85,9 +85,7 @@ class ControllerTests {
                 json(MANAGER_RESPONSE_BODY("Mary", 2))
             }
         }
-
         // VERIFY
-
     }
 
     @Test
@@ -139,7 +137,6 @@ class ControllerTests {
             employeeRepository.save(any())
             employeeRepository.deleteById(any())
         }
-
     }
 
     @Test
@@ -195,7 +192,6 @@ class ControllerTests {
         verify(exactly = 2) {
             employeeRepository.save(Employee("Tom", "Manager", 1))
         }
-
     }
 
     @Test
@@ -230,6 +226,5 @@ class ControllerTests {
         verify(exactly = 1) {
             employeeRepository.deleteById(1)
         }
-
     }
 }
